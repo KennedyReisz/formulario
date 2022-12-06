@@ -1,0 +1,224 @@
+.loginPage {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+/*! Left Side */
+.loginPage .leftSide {
+  background-color: #fff;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage .leftSide .leftSideItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginPage .leftSide .leftSideItems h2 {
+  margin-bottom: 60px;
+}
+
+@media (max-height: 768px) {
+  .loginPage .leftSide .leftSideItems h2 {
+    margin-bottom: 30px;
+  }
+}
+
+/*! Left Side - Signup Area */
+.loginPage .leftSide .leftSideItems .signupArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.loginPage .leftSide .leftSideItems .signupArea>div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>div>input {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  border: #c3c3c3 solid 1px;
+  border-radius: 5px;
+  outline: 0;
+  margin-top: 5px;
+  font-size: 16px;
+  box-shadow: 0 0 10px #00000034;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>div>p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>div>select {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  border: #c3c3c3 solid 1px;
+  border-radius: 5px;
+  outline: 0;
+  margin-top: 5px;
+  font-size: 16px;
+  box-shadow: 0 0 10px #00000034;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>.passwordInput>input {
+  letter-spacing: 2px;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>.passwordInput>.correctPasswordArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>.passwordInput>.correctPasswordArea>small {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #CCC;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>.passwordInput>.correctPasswordArea>.firstItem {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.loginPage .leftSide .leftSideItems .signupArea>.locationInput {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.loginPage .leftSide .leftSideItems>.finishArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage .leftSide .leftSideItems>.finishArea button {
+  width: 400px;
+  height: 40px;
+  background-color: #284A5E;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.loginPage .leftSide .leftSideItems>.finishArea button:hover {
+  opacity: 0.9;
+}
+
+.loginPage .leftSide .leftSideItems>.finishArea>p {
+  color: #C4C4C4;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.loginPage .leftSide .leftSideItems>.finishArea>p>a {
+  color: #476D73;
+}
+
+.loginPage .leftSide .leftSideItems>.finishArea>p>a:hover {
+  opacity: 0.7;
+}
+
+/*! Right Side */
+.loginPage .rightSide {
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(162.21deg, #517879 4.83%, #1E3E57 103.44%);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage .rightSide .rightSideItems h1 {
+  width: 500px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+  filter: drop-shadow(3px 4px 0px #ffffff42);
+  margin-bottom: 15px;
+}
+
+.loginPage .rightSide .rightSideItems p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  filter: drop-shadow(3px 2px 0px #ffffff42);
+}
+
+/*! Responsivity */
+@media (max-width: 1220px) {
+  .loginPage .leftSide {
+    width: 100%;
+  }
+
+  .loginPage .rightSide {
+    display: none;
+  }
+}
+
+@media (max-width: 419px) {
+  .loginPage .leftSide .leftSideItems .signupArea>div>input {
+    width: 350px;
+  }
+
+  .loginPage .leftSide .leftSideItems .signupArea>div>select {
+    width: 350px;
+  }
+
+  .loginPage .leftSide .leftSideItems>.finishArea button {
+    width: 350px;
+  }
+
+  .loginPage .leftSide .leftSideItems .signupArea>.passwordInput>.correctPasswordArea>small {
+    width: 300px;
+  }
+}
+
+@media (max-width: 370px) {
+  .loginPage .leftSide .leftSideItems .signupArea>div>input {
+    width: 280px;
+  }
+
+  .loginPage .leftSide .leftSideItems .signupArea>div>select {
+    width: 280px;
+  }
+
+  .loginPage .leftSide .leftSideItems>.finishArea button {
+    width: 280px;
+  }
+
+  .loginPage .leftSide .leftSideItems .signupArea>.passwordInput>.correctPasswordArea>small {
+    width: 260px;
+  }
+}
+
+@media (max-height: 710px) {
+  .loginPage .leftSide .leftSideItems h2 {
+    display: none;
+  }
+}
